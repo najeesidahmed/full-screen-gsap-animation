@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#main{
+    display: flex;
+}
+h1{
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: normal;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    color: #000;
+    text-align: center;
+    font-size: 3.6em;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+.content{
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 99;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+.content p{
+    margin: 0.5em auto;
+}
+.content span{
+    width: auto;
+    height: auto;
+    border: 1px solid #222;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0px 10px;
+}
+.buttons{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.buttons button {
+    border: none;
+    background-size: contain;
+    background: url(images/down-arrow.png) no-repeat;
+    background-position: center;
+    width: 10px;
+    height: 30px;
+    display: block;
+    margin: 20px 0;
+    padding: 0 15px;
+    transition-duration: 0.6s;
+}
+
+.buttons button.next{
+    transform: scaleY(-1);
+}
